@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(#084207,#021f01), url(images/ABBpic.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flexbox;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 150px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 15px;
+    font-style: normal;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 4px;
+    background-color: #021f01;
+    display: block;
+    margin: auto;
+    transform: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    width:90%;
+    color: azure;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: larger;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: oblique;
+}
+.text-box{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #ffffff;
+}
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    padding: 12px 36px;
+    font-size: 13px;
+    background: transparent;
+    box-shadow: #021f01;
+    position: relative;cursor: crosshair;
+}
+.btn:hover::after{
+    border: 1px #eed302e0;
+    background: #eed302e0;
+    transition: 1s;
+}
+/*----------------------next scroll pg----------------------------- */
+.courses{
+    width:80% ;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+h1{
+    font-size: medium;
+    font-style: normal;
+    font-weight: 600;
+}
+p{
+    color: #084207;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.course-col{
+    flex-basis: 31%;
+    background-color: #c6c583;
+    font: #ffff;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    transition: 0.1s;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.course-col:hover{
+    box-shadow: 0 0 20px 0px #021f01;
+}
+/-----------------campus--------------/
+.campus{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.campus-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.campus-col img{
+    width: 100%;
+}
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;  
+    transition: 2s;
+}
+.layer:hover{
+    background-color: #e35d0f;
+    border-color: #af470b;
+
+}
